@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MyGarageDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_border"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/myGarageDetailsChoosePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/custom_color"
+            android:onClick="myGarageDetailsChoosingButton"
+            android:text="Choose a picture"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/myGarageDetailsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/custom_color"
+        android:hint="Enter Garage Name"
+        android:padding="16dp" />
+    <EditText
+        android:id="@+id/myGarageDetailsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableStart="@drawable/ic_baseline_details_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/custom_color"
+        android:background="@drawable/custom_border"
+        android:hint="Enter Description"
+        android:padding="16dp" />
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/myGarageDetailsDivision"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/myGarageDetailsDistrict"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/myGarageDetailsPostButton"
+        android:onClick="myGarageDetailsPost"
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyGarage">
+
+    <TextView
+        android:id="@+id/myGarageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garrage Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/custom_color"
+        android:layout_margin="16dp"/>
+
+    <ImageView
+        android:id="@+id/myGarageImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/garage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Services"
+        android:textSize="24sp"
+        android:textColor="@color/custom_color"
+        android:layout_margin="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myGarageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+
+        android:layout_height="250dp" />
+
+    <Button
+        android:id="@+id/myGaragePostButton"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Services" />
+</LinearLayout>

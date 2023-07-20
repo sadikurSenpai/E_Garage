@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/garageModelCardView"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#EEEEEE"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/garageModelImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                 />
+
+            <TextView
+                android:id="@+id/garageModelName"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/garageModelImage"
+                android:layout_toRightOf="@id/garageModelImage"
+                android:foregroundGravity="center_horizontal"
+                android:text="Sadikur Rahman"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/garageModelDetails"
+                android:layout_width="190dp"
+                android:textColor="@color/custom_color"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/garageModelName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/garageModelImage"
+                android:layout_toRightOf="@id/garageModelImage"
+                android:foregroundGravity="center_horizontal"
+                android:text="This is a garage"
+                android:textSize="16sp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
